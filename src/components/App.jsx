@@ -16,6 +16,7 @@ class App extends React.Component {
   };
 
   addContact = (name, number) => {
+    this.setState({ filter: '' });
     if (
       this.state.contacts.some(
         el => el.name.toLowerCase() === name.toLowerCase()
