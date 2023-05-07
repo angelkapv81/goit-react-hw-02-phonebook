@@ -54,23 +54,14 @@ class App extends React.Component {
     );
 
     return (
-      <div
-        style={{
-          height: '100vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          fontSize: 40,
-          color: '#010101',
-        }}
-      >
+      <section>
         <Form onSubmit={this.addContact} />
         <Search
           filterQuery={this.state.filter}
           filter={this.handleFilterChange}
         />
         <Contacts contacts={filteredContacts} onDelete={this.deleteContact} />
-      </div>
+      </section>
     );
   }
 }

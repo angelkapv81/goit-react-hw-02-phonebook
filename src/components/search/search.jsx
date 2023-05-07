@@ -1,11 +1,14 @@
 import PropTypes from 'prop-types';
+import style from './search.module.css';
 
 const Search = ({ filterQuery, filter }) => {
   return (
     <div>
-      <label>
+      <label className={style.contactFind}>
         Find contacts
         <input
+          placeholder="кого шукаємо..."
+          className={style.contactSearch}
           type="text"
           name="filter"
           value={filterQuery}
