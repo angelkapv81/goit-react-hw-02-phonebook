@@ -23,7 +23,8 @@ const Contacts = ({ contacts, onDelete }) => {
     </div>
   );
 };
-Search.propTypes = {
+
+Contacts.propTypes = {
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
