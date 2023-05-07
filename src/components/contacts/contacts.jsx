@@ -2,26 +2,29 @@ import PropTypes from 'prop-types';
 import style from './contacts.module.css';
 
 const Contacts = ({ contacts, onDelete }) => {
-  return (
-    <div className={style.contactBox}>
-      <p className={style.contact}>Contacts</p>
-      <ul className={style.contactList}>
-        {contacts.map(({ id, name, number }) => (
-          <li className={style.contactItem} key={id}>
-            <p>
-              {name} - {number}
-            </p>
-            <button
-              className={style.contactButton}
-              onClick={() => onDelete(id)}
-            >
-              Delete contact
-            </button>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+  if (contacts.length) {
+    return (
+      <div className={style.contactBox}>
+        <p className={style.contact}>Contacts</p>
+        <ul className={style.contactList}>
+          {contacts.map(({ id, name, number }) => (
+            <li className={style.contactItem} key={id}>
+              <p>
+                {name} - {number}
+              </p>
+              <button
+                className={style.contactButton}
+                onClick={() => onDelete(id)}
+              >
+                Delete contact
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
+  return;
 };
 
 Contacts.propTypes = {
