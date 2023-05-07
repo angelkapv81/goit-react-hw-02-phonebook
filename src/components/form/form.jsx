@@ -3,7 +3,7 @@ import style from './form.module.css';
 import { nanoid } from 'nanoid';
 import { Component } from 'react';
 
-class Phonebook extends Component {
+class Form extends Component {
   state = {
     name: '',
     number: '',
@@ -60,8 +60,8 @@ class Phonebook extends Component {
   }
 }
 
-Phonebook.propTypes = {
+Form.propTypes = {
   onSubmit: PropTypes.func.isRequired,
 };
 
-export default Phonebook;
+export default Form;
