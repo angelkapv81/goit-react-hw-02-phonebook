@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import style from './contacts.module.css';
+import style from './Contacts.module.css';
 
 const Contacts = ({ contacts, onDelete }) => {
   if (contacts.length) {

@@ -1,8 +1,10 @@
 import React from 'react';
-import Form from './form/form';
-import Contacts from './contacts/contacts';
-import Search from './search/search';
+import Form from './Form/Form';
+import Contacts from './Contacts/Contacts';
+import Search from './Search/Search';
 import { nanoid } from 'nanoid';
+import swal from 'sweetalert';
+
 class App extends React.Component {
   state = {
     contacts: [
@@ -22,6 +24,7 @@ class App extends React.Component {
         el => el.name.toLowerCase() === name.toLowerCase()
       )
     ) {
+      swal(`Contact ${name} already in list!`);
       return;
     }
 
