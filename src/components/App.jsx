@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from './form/form';
-import Contacts from './Contacts/Contacts';
-import Search from './Search/Search';
+import Contacts from './contacts/contacts';
+import Search from './search/search';
 import { nanoid } from 'nanoid';
 import swal from 'sweetalert';
 
