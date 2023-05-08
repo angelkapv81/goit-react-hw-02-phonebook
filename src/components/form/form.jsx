@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import style from './Form.module.css';
+import style from './form.module.css';
 import { nanoid } from 'nanoid';
 import { Component } from 'react';
 
