@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import style from './Search.module.css';
+import style from './search.module.css';
 
 const Search = ({ filterQuery, filter }) => {
   return (
