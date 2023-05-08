@@ -1,5 +1,5 @@
 import React from 'react';
-import Form from './form/Form';
+import Form from './Form/Form';
 import Contacts from './Contacts/Contacts';
 import Search from './Search/Search';
 import { nanoid } from 'nanoid';
